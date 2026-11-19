@@ -1,0 +1,46 @@
+body {
+font-family: Arial, sans-serif;
+background-color: #ffe2eb;
+line-height: 1.5;
+max-width: 950px;
+margin: 24px auto;
+padding: 0 18px;
+}
+
+header { text-align: center; }
+h1 { color: #9b325e; }
+nav { background-color: #c00371; padding: 14px; text-align: center; }
+nav a { color: white; margin: 0 12px; text-decoration: none; }
+
+.panel {
+background-color: white;
+border: 1px solid #e9c6e9;
+padding: 20px;
+margin-top: 18px;
+}
+
+.project-card {
+background-color: #fbeaf4;
+border: 1px solid #d8aacc;
+padding: 14px;
+}
+
+.project-row { 
+    display: flex; gap: 16px; flex-wrap: wrap; 
+}
+
+.project-card { 
+    flex: 1 1 240px; 
+}
+
+img { 
+    max-width: 100%; height: auto; 
+}
+@media (max-width: 600px) {
+nav a {
+display: block;
+margin: 6px 0;
+}
+.project-row { display: block; }
+.project-card { margin-bottom: 12px; }
+}
